@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul,ol{
+            list-style: none;
+        }
+        body{
+            background:#eee url("images/bg.png");        }
+        .contain{
+            width: 805px;
+            height:320px;
+            margin:150px auto;
+            overflow:hidden;
+            text-transform: uppercase;
+        }
+        .contain>li{
+            width:160px;
+            float:left;
+            border-left:1px solid #888;
+            position:relative;
+        }
+        .contain:hover li{
+            width:40px;
+            transition: all 1s;
+
+        }
+        .contain:hover li .flag{
+            text-align: center;
+        }
+        .contain li:hover{
+            width:640px;
+        }
+        .flag{
+            height:60px;
+            line-height: 60px;
+            background:rgba(0,0,0,.5);
+            text-indent: 20px;
+            color:#fff;
+            width:100%;
+            position:absolute;
+            left:0;
+            bottom:0;
+        }
+    </style>
+</head>
+<body>
+    <ul class="contain">
+        <li>
+            <img src="images/1.jpg" alt="">
+            <div class="flag">maxiaozha</div>
+        </li>
+        <li>
+            <img src="images/2.jpg" alt="">
+            <div class="flag">maxiaozha</div>
+        </li>
+        <li>
+            <img src="images/3.jpg" alt="">
+            <div class="flag">maxiaozha</div>
+        </li>
+        <li>
+            <img src="images/4.jpg" alt="">
+            <div class="flag">maxiaozha</div>
+        </li>
+        <li>
+            <img src="images/5.jpg" alt="">
+            <div class="flag">maxiaozha</div>
+        </li>
+    </ul>
+</body>
+</html>
